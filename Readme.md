@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Егор Кастусик](https://up.htmlacademy.ru/adaptive/28/user/2145845).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://github.com/baileys-li).
 
 ---
 
