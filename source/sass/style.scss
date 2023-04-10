@@ -1,4 +1,16 @@
-// Начните писать стили здесь
-body {
-  background-color: rgb(30, 138, 30);
-}
+//переменные и миксины первые - чтобы автоматически подключались во все файлы
+@import "base/variables.scss";
+@import "base/mixins.scss";
+
+// Base
+@import "base/fonts.scss";
+@import "base/base.scss";
+
+// Blocks
+@import "blocks/buttons.scss";
+@import "blocks/footer.scss";
+@import "blocks/title.scss";
+@import "blocks/header-nav.scss";
+@import "blocks/advantages__list.scss";
+@import "blocks/advantages__sublist.scss";
+@import "blocks/social__list.scss";

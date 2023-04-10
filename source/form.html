@@ -19,16 +19,16 @@
       </button>
       <ul class="header-nav__list">
         <li class="header-nav__item header-nav__item--active">
-          <a class="header-nav_link" href="#">Главная</a>
+          <a class="header-nav__link" href="#">Главная</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav_link" href="catalog.html">Фото и видео</a>
+          <a class="header-nav__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav_link" href="form.html">Форма отзыва</a>
+          <a class="header-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav_link" href="#">Html Academy</a>
+          <a class="header-nav__link" href="#">Html Academy</a>
         </li>
       </ul>
     </nav>
@@ -44,22 +44,22 @@
       <h2 class="feedback__title title">Оставьте свой отзыв</h2>
       <p class="feedback__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
+      <form class="feedback__common-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="feedback__form form">
           <legend class="form__legend">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label-text" for="name">Имя*:</label>
-              <input class="form__input-text" id="name" name="name" type="text" placeholder="Имя" value="Пётр" required>
+              <input class="form__input" id="name" name="name" type="text" placeholder="Имя" value="Пётр" required>
             </li>
             <li class="form__item">
               <label class="form__label-text" for="surname">Фамилия*:</label>
-              <input class="form__input-text" id="surname" name="surname" type="text" placeholder="Фамилия"
+              <input class="form__input" id="surname" name="surname" type="text" placeholder="Фамилия"
                 value="Пустота" required>
             </li>
             <li class="form__item">
               <label class="form__label-text" for="patronymic">Отчество:</label>
-              <input class="form__input-text" id="patronymic" name="patronymic" type="text" placeholder="Отчество"
+              <input class="form__input" id="patronymic" name="patronymic" type="text" placeholder="Отчество"
                 value="Викторович">
             </li>
           </ul>
@@ -69,11 +69,11 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label-text" for="phone">Контактный телефон*:</label>
-              <input class="form__input-text" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
+              <input class="form__input" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
             </li>
             <li class="form__item">
               <label class="form__label-text" for="email">Электронная почта*:</label>
-              <input class="form__input-text" id="email" name="e-mail" type="email" placeholder="Введите e-mail"
+              <input class="form__input" id="email" name="e-mail" type="email" placeholder="Введите e-mail"
                 required>
             </li>
           </ul>
