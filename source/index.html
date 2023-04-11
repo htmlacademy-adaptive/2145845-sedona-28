@@ -55,8 +55,10 @@
             <p class="benefits__number">— №1 —</p>
             <p class="benefits__description-item description">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="benefits__image" src="img/benefits-photo1.jpg" width="320" height="256"
-            alt="Дома в городе Седона.">
+          <div class="benefits__image-container">
+            <img class="benefits__image" src="img/benefits-photo1.jpg" width="320" height="256"
+              alt="Дома в городе Седона.">
+          </div>
         </li>
         <li>
           <ul class="benefits__list benefits__list--internal">
@@ -89,7 +91,9 @@
             <p class="benefits__number">— №2 —</p>
             <p class="benefits__description-item description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="benefits__image" src="img/benefits-photo2.jpg" width="320" height="256" alt="Мост дьявола.">
+          <div class="benefits__image-container">
+            <img class="benefits__image" src="img/benefits-photo2.jpg" width="320" height="256" alt="Мост дьявола.">
+          </div>
         </li>
         <li class="benefits__item benefits__item--background-gray">
           <div class="benefits__container container">
@@ -114,12 +118,14 @@
         </li>
       </ol>
     </section>
-    <section class="subscribe__container container">
-      <h2 class="visually-hidden">Подписаться на рассылку.</h2>
-      <p class="subscribe__title title">Заинтересовались?</p>
-      <p class="subscribe__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-        предложения гостиниц в седоне</p>
-      <a class="subscribe__button button" href="#">Найти гостиницу</a>
+    <section class="subscribe">
+      <div class="subscribe__container container">
+        <h2 class="visually-hidden">Подписаться на рассылку.</h2>
+        <p class="subscribe__title title">Заинтересовались?</p>
+        <p class="subscribe__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в седоне</p>
+        <a class="subscribe__button button" href="#">Найти гостиницу</a>
+      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Город Седона на карте.</h2>
@@ -186,7 +192,6 @@
         </svg>
         <span class="visually-hidden">Логотип HTML-Academy.</span>
       </a>
-    </div>
     </div>
   </footer>
 </body>
