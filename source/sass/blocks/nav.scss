@@ -19,7 +19,7 @@
 }
 
 .nav__link {
-  color: $main-color-second;
   @include text-title;
+  color: $main-color-second;
   text-decoration: none;
 }
