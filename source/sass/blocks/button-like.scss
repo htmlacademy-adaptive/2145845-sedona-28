@@ -3,18 +3,5 @@
   height: 21px;
   border: none;
   background-image: url("/img/like-icon.svg");
-  background-color: #ffffff;
-}
-
-.photo-card__like {
-  display: flex;
-}
-
-.photo-card__button {
-  padding-bottom: 5px;
-  margin-right: 15px;
-}
-
-.photo-card__number-likes {
-  font-weight: 700;
+  background-color: $main-color-second;
 }

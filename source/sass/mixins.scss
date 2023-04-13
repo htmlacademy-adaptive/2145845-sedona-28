@@ -1,5 +1,27 @@
-@mixin list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@mixin text-big-bold {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@mixin text-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@mixin text-extra-small {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@mixin text-small {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin images {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $background-image-color;
 }

@@ -1,8 +1,6 @@
 .inner-hero {
-  background-color: #5496bd;
-  background-image: url("/img/inner-hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include images;
+  background-image: url("../../img/inner-hero-background.jpg");
   padding-top: 51px;
   padding-bottom: 67px;
 }

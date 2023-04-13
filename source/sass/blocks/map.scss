@@ -1,3 +1,4 @@
 .map__frame {
+  @include images;
   background-image: url("../../img/map.jpg");
 }
