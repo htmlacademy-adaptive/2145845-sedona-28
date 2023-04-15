@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -27,17 +28,17 @@
 }
 
 .nav__link {
-  color: $main-color-second;
   @include text-title;
+  color: $main-color-second;
   text-decoration: none;
   display: block;
   padding: 17px 10px 12px 10px;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
+    @include text-small;
     color: $title-color;
     background-color: $main-color-second;
     padding: 18px;
-    @include text-small;
   }
 }
