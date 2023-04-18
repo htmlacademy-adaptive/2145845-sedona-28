@@ -20,6 +20,11 @@
   line-height: 21px;
 }
 
+@mixin text-extra-big {
+  font-size: 30px;
+  line-height: 40px;
+}
+
 @mixin images {
   background-size: cover;
   background-repeat: no-repeat;
