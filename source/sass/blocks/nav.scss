@@ -5,10 +5,10 @@
   border: none;
   padding: 0;
   position: absolute;
-  cursor: pointer;
   top: 17px;
   right: 20px;
   z-index: 5;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -40,8 +40,8 @@
 }
 
 .nav__link {
-  color: $main-color-second;
   @include text-title;
+  color: $main-color-second;
   text-decoration: none;
   display: block;
   padding: 17px 10px 12px 10px;
@@ -49,35 +49,27 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
+    @include text-small;
     color: $title-color;
     background-color: $main-color-second;
     padding: 18px;
-    @include text-small;
-    min-width: 140px;
-    max-width: 153px;
+    width: 153px;
     box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 200px;
-    max-width: 240px;
+    width: 240px;
   }
 }
 
-// Место для логотипа на tablet и desktop
-.nav__item--place-logo-left {
+// Место под логотип
+.nav__item:nth-of-type(4n+2) {
   @media (min-width: $tablet-width) {
-    margin-right: 75px;
+    margin-right: 153px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 75px;
-  }
-}
-
-.nav__item--place-logo-right {
-  @media (min-width: $tablet-width) {
-    margin-left: 75px;
+    margin-right: 240px;
   }
 }
 
