@@ -1,12 +1,12 @@
-//переменные и миксины первые - чтобы автоматически подключались во все файлы
-@import "variables.scss";
-@import "mixins.scss";
-
-// Global
+// Базовые свойства
 @import "fonts.scss";
 @import "global.scss";
 
-// Blocks
+// Переменные
+@import "variables.less";
+@import "mixins.less";
+
+// Блоки компонентов
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/container.scss";
