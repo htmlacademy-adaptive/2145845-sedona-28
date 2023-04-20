@@ -126,13 +126,13 @@
   height: 256px;
 
   @media (min-width: $tablet-width) {
-    width: 512px;
     @include images;
+    width: 512px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
     @include images;
+    width: 800px;
   }
 }
 

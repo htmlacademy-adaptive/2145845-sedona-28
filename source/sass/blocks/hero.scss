@@ -3,8 +3,8 @@
 // }
 
 .hero__container {
-  width: $mobile-width;
   @include images;
+  width: $mobile-width;
   background-image: url("../../img/background-image-main.jpg");
   color: $main-color-second;
   padding-top: 91px;
