@@ -1,5 +1,5 @@
 .button {
-  @include text-big-bold;
+  @include text-big-bold();
   font-family: $main-font;
   text-decoration: none;
   color: $main-color-second;
@@ -8,4 +8,18 @@
   display: block;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+    color: $light-opacity;
+  }
+
+  &:disabled {
+    background-color: $hover-form;
+    color: $main-color-second;
+  }
 }
