@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.big-card {
+  grid-column: 1/-1;
+}
+
 .photo-card__link {
   display: block;
   width: $mobile-content-inner;
@@ -64,7 +68,7 @@
     height: 267px;
   }
 
-  .big-element .photo-card__link {
+  .big-card .photo-card__link {
     width: $tablet-content;
     height: 400px;
   }
@@ -96,7 +100,7 @@
 
 // Desktop
 @media (min-width: $desktop-width) {
-  .big-element .photo-card__link {
+  .big-card .photo-card__link {
     width: $desktop-width;
     height: 400px;
   }
