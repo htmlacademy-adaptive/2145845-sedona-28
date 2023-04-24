@@ -54,18 +54,18 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label-description" for="name">Имя*:</label>
-                  <input class="form__form-input form-text" id="name" name="name" type="text" placeholder="Имя"
-                    value="Пётр" required>
+                  <input class="form__form-input" id="name" name="name" type="text" placeholder="Имя" value="Пётр"
+                    required>
                 </li>
                 <li class="form__item">
                   <label class="form__label-description" for="surname">Фамилия*:</label>
-                  <input class="form__form-input form-text" id="surname" name="surname" type="text"
-                    placeholder="Фамилия" value="Пустота" required>
+                  <input class="form__form-input" id="surname" name="surname" type="text" placeholder="Фамилия"
+                    value="Пустота" required>
                 </li>
                 <li class="form__item">
                   <label class="form__label-description" for="patronymic">Отчество:</label>
-                  <input class="form__form-input form-text" id="patronymic" name="patronymic" type="text"
-                    placeholder="Отчество" value="Викторович">
+                  <input class="form__form-input" id="patronymic" name="patronymic" type="text" placeholder="Отчество"
+                    value="Викторович">
                 </li>
               </ul>
             </fieldset>
@@ -76,18 +76,18 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label-description" for="phone">Контактный телефон*:</label>
-                  <input class="form__form-input form-text" id="phone" name="phone" type="tel"
-                    placeholder="Введите телефон" required>
+                  <input class="form__form-input" id="phone" name="phone" type="tel" placeholder="Введите телефон"
+                    required>
                 </li>
                 <li class="form__item">
                   <label class="form__label-description" for="email">Электронная почта*:</label>
-                  <input class="form__form-input form-text" id="email" name="e-mail" type="email"
-                    placeholder="Введите e-mail" required>
+                  <input class="form__form-input" id="email" name="e-mail" type="email" placeholder="Введите e-mail"
+                    required>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="feedback__form form big-element">
+          <div class="feedback__form form big-form">
             <fieldset class="form__fieldset">
               <legend class="form__legend title">Ваше общее впечатление:</legend>
               <ul class="form__list form__list--radio">
@@ -96,14 +96,14 @@
                     <input class="form__input-radio visually-hidden" type="radio" name="impression" value="positive"
                       checked>
                     <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__label form-text">Скорее положительное</span>
+                    <span class="form__label">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__item form__item--control">
                   <label class="form__control">
                     <input class="form__input-radio visually-hidden" type="radio" name="impression" value="negative">
                     <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__label form-text">Скорее отрицательное</span>
+                    <span class="form__label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__item form__item--control">
@@ -111,13 +111,13 @@
                     <input class="form__input-radio visually-hidden" type="radio" name="impression" id="no-answer"
                       value="no-answer">
                     <span class="form__control-mark form__control-mark--radio"></span>
-                    <span class="form__label form-text">Затрудняюсь ответить</span>
+                    <span class="form__label">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="feedback__form form big-element">
+          <div class="feedback__form form big-form">
             <fieldset class="form__fieldset">
               <legend class="form__legend title">Посещенные достопримечательности:</legend>
               <ul class="form__list form__list--checkbox">
@@ -126,7 +126,7 @@
                     <input class="form__input-checkbox visually-hidden" type="checkbox" name="bridge" id="bridge"
                       checked>
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__label form-text" for="bridge">Мост Дьявола</span>
+                    <span class="form__label" for="bridge">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form__item form__item--control">
@@ -134,30 +134,30 @@
                     <input class="form__input-checkbox visually-hidden" type="checkbox" name="mountain" id="mountain"
                       checked>
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__label form-text" for="mountain">Гора-Колокол</span>
+                    <span class="form__label" for="mountain">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form__item form__item--control">
                   <label class="form__control">
                     <input class="form__input-checkbox visually-hidden" type="checkbox" name="park" id="park" checked>
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__label form-text" for="park">Слайд-парк</span>
+                    <span class="form__label" for="park">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="form__item form__item--control">
                   <label class="form__control">
                     <input class="form__input-checkbox visually-hidden" type="checkbox" name="rocks" id="rocks">
                     <span class="form__control-mark form__control-mark--checkbox"></span>
-                    <span class="form__label form-text" for="rocks">Красные скалы</span>
+                    <span class="form__label" for="rocks">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="feedback__form form big-element">
+          <div class="feedback__form form big-form">
             <fieldset class="form__fieldset">
               <legend class="form__legend title ">Опишите свои эмоции:</legend>
-              <textarea class="form__form-input form-text form__form-input--textarea" name="comment"
+              <textarea class="form__form-input form__form-input--textarea" name="comment"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
           </div>
