@@ -164,32 +164,32 @@
   border-radius: 4px;
 }
 
-.form__input-radio[type="radio"]:checked+.form__control-mark::after {
+.form__input-radio[type="radio"]:checked + .form__control-mark::after {
   @include radio-control;
   background-color: $description-color;
 }
 
-.form__input-checkbox[type="checkbox"]:checked+.form__control-mark::after {
+.form__input-checkbox[type="checkbox"]:checked + .form__control-mark::after {
   @include checkbox-control;
 }
 
 // Состояния радиокнопок и чекбоксов
-.form__input-radio[type="radio"]:hover+.form__control-mark,
-.form__input-checkbox[type="checkbox"]:hover+.form__control-mark {
+.form__input-radio[type="radio"]:hover + .form__control-mark,
+.form__input-checkbox[type="checkbox"]:hover + .form__control-mark {
   background-color: $hover-form;
 }
 
-.form__input-radio[type="radio"]:active+.form__control-mark,
-.form__input-checkbox[type="checkbox"]:active+.form__control-mark {
+.form__input-radio[type="radio"]:active + .form__control-mark,
+.form__input-checkbox[type="checkbox"]:active + .form__control-mark {
   background-color: $active-form;
 }
 
-.form__input-radio[type="radio"]:active+.form__control-mark::after {
+.form__input-radio[type="radio"]:active + .form__control-mark::after {
   @include radio-control;
   background-color: $active-form-control;
 }
 
-.form__input-checkbox[type="checkbox"]:active+.form__control-mark::after {
+.form__input-checkbox[type="checkbox"]:active + .form__control-mark::after {
   @include checkbox-control;
   opacity: 0.3;
 }
