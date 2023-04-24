@@ -66,6 +66,6 @@
 }
 
 .feedback__note {
-  @include text-extra-small;
+  @include text-extra-small();
   text-align: end;
 }

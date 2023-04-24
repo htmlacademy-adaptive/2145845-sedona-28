@@ -22,7 +22,7 @@
 
 // Hashtag
 .footer__hashtag-text {
-  @include text-big-bold;
+  @include text-big-bold();
   margin: 0;
   padding-top: 33px;
   padding-bottom: 30px;

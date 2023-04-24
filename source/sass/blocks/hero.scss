@@ -3,7 +3,7 @@
 // }
 
 .hero__container {
-  @include images;
+  @include images();
   width: $mobile-width;
   background-image: url("../../img/background-image-main.jpg");
   color: $main-color-second;

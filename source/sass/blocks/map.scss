@@ -1,5 +1,5 @@
 .map__frame {
-  @include images;
+  @include images();
   background-image: url("../../img/map.jpg");
   display: block;
   width: 100%;

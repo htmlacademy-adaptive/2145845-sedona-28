@@ -47,7 +47,7 @@
 }
 
 .presentation__image {
-  @include images;
+  @include images();
 }
 
 .presentation__button {

@@ -1,5 +1,5 @@
 .button {
-  @include text-big-bold;
+  @include text-big-bold();
   font-family: $main-font;
   text-decoration: none;
   color: $main-color-second;

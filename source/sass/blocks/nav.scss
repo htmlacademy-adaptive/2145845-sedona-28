@@ -32,7 +32,7 @@
 }
 
 .nav__link {
-  @include text-title;
+  @include text-title();
   color: $main-color-second;
   text-decoration: none;
   display: block;
@@ -41,7 +41,7 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    @include text-small;
+    @include text-small();
     color: $title-color;
     background-color: $main-color-second;
     padding: 18px;

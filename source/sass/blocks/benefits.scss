@@ -126,12 +126,12 @@
   height: 256px;
 
   @media (min-width: $tablet-width) {
-    @include images;
+    @include images();
     width: 512px;
   }
 
   @media (min-width: $desktop-width) {
-    @include images;
+    @include images();
     width: 800px;
   }
 }
@@ -181,27 +181,27 @@
 // Иконки и их расположение
 @media (min-width: $mobile-width) {
   .benefits__item--house::before {
-    @include insert-icon-general;
-    @include insert-icon-mobile;
+    @include insert-icon-general();
+    @include insert-icon-mobile();
     background-image: url("../../img/mobile-icon-house.svg");
   }
 
   .benefits__item--food::before {
-    @include insert-icon-general;
-    @include insert-icon-mobile;
+    @include insert-icon-general();
+    @include insert-icon-mobile();
     background-image: url("../../img/mobile-icon-food.svg");
   }
 
   .benefits__item--souvenirs::before {
-    @include insert-icon-general;
-    @include insert-icon-mobile;
+    @include insert-icon-general();
+    @include insert-icon-mobile();
     background-image: url("../../img/mobile-icon-souvenirs.svg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .benefits__item--house::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     background-image: url("../../img/tablet-icon-house.svg");
     width: 77px;
     height: 72px;
@@ -210,7 +210,7 @@
   }
 
   .benefits__item--food::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     background-image: url("../../img/tablet-icon-food.svg");
     width: 82px;
     height: 68px;
@@ -219,7 +219,7 @@
   }
 
   .benefits__item--souvenirs::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     background-image: url("../../img/tablet-icon-souvenirs.svg");
     width: 66px;
     height: 75px;
@@ -230,19 +230,19 @@
 
 @media (min-width: $desktop-width) {
   .benefits__item--house::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     top: 69px;
     left: 159px;
   }
 
   .benefits__item--food::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     top: 72px;
     left: 162px;
   }
 
   .benefits__item--souvenirs::before {
-    @include insert-icon-general;
+    @include insert-icon-general();
     top: 69px;
     left: 159px;
   }

@@ -11,12 +11,12 @@
 }
 
 .photo-card__image {
-  @include images;
+  @include images();
   display: block;
 }
 
 .photo-card__title {
-  @include text-small;
+  @include text-small();
   margin: 0;
   margin-bottom: 1px;
 }
