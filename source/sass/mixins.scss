@@ -20,9 +20,14 @@
   line-height: 21px;
 }
 
-@mixin text-extra-big() {
+@mixin text-extra-big-modal() {
   font-size: 30px;
   line-height: 40px;
+}
+
+@mixin text-extra-big() {
+  font-size: 30px;
+  line-height: 26px;
 }
 
 @mixin images() {
