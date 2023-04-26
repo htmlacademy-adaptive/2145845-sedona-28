@@ -273,6 +273,7 @@
 
 @media (max-width: $tablet-width) {
   .benefits__item--background-gray:not(:last-of-type)::after {
+    @include decoration-line;
     @include decoration-line-small;
   }
 }
