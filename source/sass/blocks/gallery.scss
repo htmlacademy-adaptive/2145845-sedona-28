@@ -27,14 +27,14 @@
 
 @media (max-width: $tablet-width) {
   .gallery__title-container::after {
-    @include decoration-line;
-    @include decoration-line-big;
+    @include decoration-line();
+    @include decoration-line-big();
     bottom: 25px;
   }
 }
 
 .gallery__title {
-  @include text-extra-big;
+  @include text-extra-big();
   margin: 0;
   margin-bottom: 37px;
 }
@@ -66,8 +66,8 @@
 
 @media (max-width: $tablet-width) {
   .gallery__item::after {
-    @include decoration-line;
-    @include decoration-line-big;
+    @include decoration-line();
+    @include decoration-line-big();
     bottom: -25px;
   }
 }

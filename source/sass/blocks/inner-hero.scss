@@ -1,5 +1,5 @@
 .inner-hero {
-  @include images;
+  @include images();
   background-image: url("../../img/inner-hero-background-mobile.jpg");
   padding-top: 51px;
   padding-bottom: 67px;

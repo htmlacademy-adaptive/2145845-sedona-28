@@ -27,7 +27,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    @include text-extra-big;
+    @include text-extra-big();
   }
 }
 

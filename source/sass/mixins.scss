@@ -69,19 +69,19 @@
   background-position: center;
 }
 
-@mixin decoration-line {
+@mixin decoration-line() {
   content: "";
   position: absolute;
   background-color: $decoration-line;
   height: 1px;
 }
 
-@mixin decoration-line-small {
+@mixin decoration-line-small() {
   width: $mobile-content-main;
   right: 18px;
 }
 
-@mixin decoration-line-big {
+@mixin decoration-line-big() {
   width: $mobile-width;
   right: -20px;
 }

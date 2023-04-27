@@ -1,7 +1,3 @@
-.big-form {
-  grid-column: 1/-1;
-}
-
 // Общие стили формы
 .form {
   margin: 0;
@@ -36,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__form--first-part::after {
-    @include decoration-line;
+    @include decoration-line();
     height: calc(100% + 14px);
     width: 1px;
     top: -7px;
@@ -56,7 +52,7 @@
 
 .feedback__form--big-part::after {
   @media (min-width: $tablet-width) {
-    @include decoration-line;
+    @include decoration-line();
     height: 1px;
     width: 123px;
     right: 0;
@@ -123,18 +119,18 @@
 
 // Радиокнопки и чекбоксы
 @media (min-width: $tablet-width) {
-  .big-form .form__list {
+  .big-element .form__list {
     display: grid;
     margin: 0 auto;
   }
 
-  .big-form .form__list--radio {
+  .big-element .form__list--radio {
     width: 579px;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 16px;
   }
 
-  .big-form .form__list--checkbox {
+  .big-element .form__list--checkbox {
     width: 480px;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 16px;
@@ -147,14 +143,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .big-form .form__list--radio {
+  .big-element .form__list--radio {
     width: 854px;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 17px;
     column-gap: 28px;
   }
 
-  .big-form .form__list--checkbox {
+  .big-element .form__list--checkbox {
     width: 871px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 17px;
