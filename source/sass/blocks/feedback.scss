@@ -155,7 +155,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include text-small;
+    @include text-small();
   }
 }
 
