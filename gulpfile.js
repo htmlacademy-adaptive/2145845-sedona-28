@@ -4,9 +4,12 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import del from 'del';
 
 // Styles
 
@@ -25,10 +28,31 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
+}
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/script.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
+
+// Images
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'))
 }
 
 // Server
