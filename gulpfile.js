@@ -9,9 +9,9 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
+import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import del from 'del';
 
 // Styles
 
@@ -99,8 +99,8 @@ const copy = (done) => {
 
 // Clean
 
-const clean = () => {
-  return del('build');
+export const clean = () => {
+  return deleteAsync('build');
 };
 
 // Server
