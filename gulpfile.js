@@ -99,7 +99,7 @@ const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 };
 
@@ -148,3 +148,22 @@ export const build = gulp.series(
     createWebp
   ),
 );
+
+// Default
+
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
