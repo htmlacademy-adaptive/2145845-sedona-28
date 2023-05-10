@@ -1,0 +1,117 @@
+.video {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 18px 24px 0 26px;
+  margin-bottom: 28px;
+}
+
+.video__description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0 25px 38px 26px;
+}
+
+.video__picture {
+  position: relative;
+}
+
+.video__picture img {
+  width: 280px;
+  height: 177px;
+  vertical-align: bottom;
+}
+
+.video__button-play {
+  position: absolute;
+  background-image: url("../img/catalog/play.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 48px;
+  height: 54px;
+  top: 62px;
+  left: 136px;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 43px;
+  }
+
+  .video__picture img {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin-top: 56px;
+    padding: 0 20px 5px 20px;
+  }
+
+  .video__description {
+    padding: 0 100px;
+    margin-bottom: 88px;
+  }
+
+  .video__button-play {
+    position: absolute;
+    background-image: url("../img/catalog/play.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 48px;
+    height: 54px;
+    top: 223px;
+    left: 300px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__picture img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__title {
+    margin-top: 62px;
+    padding: 0 20px 3px 20px;
+  }
+
+  .video__description {
+    padding: 0 170px;
+    margin-bottom: 87px;
+  }
+
+  .video {
+    padding-left: 199px;
+    padding-right: 201px;
+    margin-bottom: 90px;
+  }
+
+  .video__button-play {
+    position: absolute;
+    background-image: url("../img/catalog/play.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 48px;
+    height: 54px;
+    top: 223px;
+    left: 376px;
+    border: none;
+  }
+}
