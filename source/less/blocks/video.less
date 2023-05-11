@@ -25,6 +25,15 @@
 
 .video__picture {
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .video__picture img {
@@ -43,6 +52,15 @@
   top: 62px;
   left: 136px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {
