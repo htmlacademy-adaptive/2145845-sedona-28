@@ -1,0 +1,185 @@
+.places {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  display: block;
+}
+
+.places__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 9px 0 0 0;
+}
+
+.places__description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 1px;
+}
+
+.places__like {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 2px 37px;
+  position: relative;
+}
+
+.places__like-icon {
+  position: absolute;
+  color: #000000;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.places__picture img {
+  width: 280px;
+  height: 280px;
+}
+
+.places__content {
+  text-align: start;
+  padding: 0 20px;
+}
+
+.places__card {
+  padding-top: 24px;
+  padding-bottom: 9px;
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .places__title {
+    padding: 15px 0 0 0;
+  }
+
+  .places__card {
+    border: none;
+    padding: 0;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .places__content {
+    padding-top: 8px;
+    padding-bottom: 14px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .places__content--road {
+    background-color: #eaeaea;
+  }
+
+  .places__picture img {
+    vertical-align: bottom;
+    width: 324px;
+    height: 267px;
+  }
+
+  .places__picture--road img {
+    width: 648px;
+    height: 400px;
+  }
+
+  .places__like {
+    padding: 10px 0 0 40px;
+    text-align: end;
+    margin-bottom: 0;
+  }
+
+  .places__like-icon {
+    top: 7px;
+    left: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .places__title {
+    padding: 12px 0 3px 5px;
+  }
+
+  .places__title--road {
+    padding: 15px 0 0 0;
+  }
+
+  .places__description {
+    padding: 2px 0 13px 5px;
+  }
+
+  .places__description--road {
+    padding: 2px 0 13px 0;
+  }
+
+  .places__card {
+    position: relative;
+    padding: 0;
+  }
+
+  .places__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .places__title,
+  .places__description,
+  .places__like {
+    color: #ffffff;
+  }
+
+  .places__like {
+    padding: 11px 0 0 40px;
+    text-align: end;
+  }
+
+  .places__like-icon {
+    top: 7px;
+    left: 8px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .places__picture img {
+    width: 400px;
+    height: 267px;
+    vertical-align: bottom;
+  }
+
+  .places__picture--road img {
+    width: 1200px;
+    height: 400px;
+  }
+}
